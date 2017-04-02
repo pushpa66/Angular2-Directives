@@ -18,3 +18,9 @@
 <hr>
 <h2>Custom Attribute Directives</h2>
 <div [highlight]="'blue'" [defaultColor]="'red'">Some Text Here</div>
+
+<hr>
+<h1>Structural Directives</h1>
+<h2>*ngIf</h2>
+<div *ngIf="switch">Conditional Text</div>
+<button (click)="onSwitch()">Switch</button>

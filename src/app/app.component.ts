@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  private switch = true;
+
+  onSwitch(){
+    this.switch = !this.switch;
+  }
 }
