@@ -8,6 +8,10 @@ export class HighlightDirective {
     this.backgroundColor = 'green';
   };
 
+  @HostListener('mouseleave') mouseleave(){
+    this.backgroundColor = 'white';
+  };
+
   @HostBinding('style.backgroundColor') get setColor(){
     return this.backgroundColor;
   };
